@@ -1,0 +1,32 @@
+#+TITLE:  game-launcher-api
+#+AUTHOR: Rush Empire
+
+This is a project to test interactivity with game-launcher framework and rest-api.
+
+** Usage:
+
+ - rlwrap sbcl
+
+#+begin_src common-lisp
+  ;; This is SBCL 2.6.8, an implementation of ANSI Common Lisp.
+  ;; More information about SBCL is available at <http://www.sbcl.org/>.
+
+  ;; SBCL is free software, provided as is, with absolutely no warranty.
+  ;; It is mostly in the public domain; some portions are provided under
+  ;; BSD-style licenses.  See the CREDITS and COPYING files in the
+  ;; distribution for more information.
+   ,* (ql:quickload :game-launcher-api)
+  To load "game-launcher-api":
+  Load 1 ASDF system:
+  game-launcher-api
+  ; Loading "game-launcher-api"
+  ..................................................
+  [package game-launcher-api]....
+  (:GAME-LAUNCHER-API)
+   ,* (game-launcher-api::start-server)
+  #<HUNCHENTOOT:EASY-ACCEPTOR (host 127.0.0.1, port 8080)>
+#+end_src
+
+## License
+
+GPLv3
